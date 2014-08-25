@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form.html</title>
+</head>
+<body>
+	<form name="form1" action="test.html" method="post">
+		<input type="text" name="username" value="10Years_1" id="tid_1" onchange=""><br>
+		<input type="text" name="username" value="10Years_2" id="tid_2" onchange=""><br>
+		<input type="text" name="username" value="10Years_3" id="tid_3" onchange=""><br>
+		<input type="button" name="ok" value="save1" />
+	</form>
+	
+	<select name="edu" id="edu">
+		<option value="master">master</option>
+		<option value="phd">phd</option>
+		<option value="u" selected="selected">u</option>
+		<option value="college">college</option>
+	</select>
+		<br>
+	<select name="job" id="job">
+		<option value="but">but</option>
+		<option value="IT">IT</option>
+		<option value="guy">guy</option>
+		<option value="arch">arch</option>
+	</select>
+</body>
+
+<script type="text/javascript">
+	alert(document.getElementById("edu").hasChildNodes());
+	alert(document.getElementById("tid_1").hasChildNodes());
+	  
+</script>
+</html>

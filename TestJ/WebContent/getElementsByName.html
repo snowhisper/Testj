@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form.html</title>
+</head>
+<body>
+	<form name="form1" action="test.html" method="post">
+		<input type="text" name="username" value="10Years_1" id="tid_1" onchange="change()"><br>
+		<input type="text" name="username" value="10Years_2" id="tid_2" onchange=""><br>
+		<input type="text" name="username" value="10Years_3" id="tid_3" onchange="">
+		<input type="button" name="ok" value="save1" />
+	</form>
+</body>
+
+<script type="text/javascript">
+	var inputElement = document.getElementsByName("username");
+	//get length
+	alert(inputElement.length);
+	//loop all elements
+	/*
+	for(var i=0;i<inputElement.length;i++){
+			var element=inputElement[i];
+		
+			alert(element.value);
+		}
+		*/
+	//build function for onchange
+	//function change(){
+	//		alert(document.getElementById("tid_1").value);
+	//	}
+	
+	//loop all functions and use onchange
+	for(var i=0;i<inputElement.length;i++){
+			var element=inputElement[i];
+			element.onchange=function(){
+					alert(this.value);//this=current element
+				}
+		}
+	
+	
+</script>
+</html>

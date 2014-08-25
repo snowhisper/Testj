@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form.html</title>
+</head>
+<body>
+	<form name="form1" action="test.html" method="post">
+		<input type="text" name="username" value="10Years_1" id="tid_1" onchange=""><br>
+		<input type="text" name="username" value="10Years_2" id="tid_2" onchange=""><br>
+		<input type="text" name="username" value="10Years_3" id="tid_3" onchange=""><br>
+		<input type="button" name="ok" value="save1" />
+	</form>
+	
+	<select name="edu" id="edu">
+		<option value="master">master</option>
+		<option value="phd">phd</option>
+		<option value="u" selected="selected">u</option>
+		<option value="college">college</option>
+	</select>
+		<br>
+	<select name="job" id="job">
+		<option value="but">but</option>
+		<option value="IT">IT</option>
+		<option value="guy">guy</option>
+		<option value="arch">arch</option>
+	</select>
+</body>
+
+<script type="text/javascript">
+	//get all input element and return length
+	
+	var inputElement=document.getElementsByTagName("input");
+	/* 
+	alert(inputElement.length);
+	
+	for(var i=0;i<inputElement.length;i++){
+			var element=inputElement[i];
+			alert(element.value);
+		}
+	 */
+	//output all value but not button
+	/* 
+	for(var i=0;i<inputElement.length;i++){
+		var element=inputElement[i];
+		if(element.type!="button"){
+			alert(element.value);
+		}
+	}
+	 */
+	//outputid= edu option tag value 
+	var eduSelectElement= document.getElementById("edu");
+	var eduOptionsElements=eduSelectElement.getElementsByTagName("option");
+	/* 
+	for(var i=0;i<eduOptionsElements.length;i++){
+		alert(eduOptionsElements[i].value);
+	}
+	 */
+	//output all options
+	/* 
+	var optionsElements=document.getElementsByTagName("option");
+	for(var i=0;i<optionsElements.length;i++){
+		alert(optionsElements[i].value);
+	}
+	  */
+	//output all selected value
+	alert(document.getElementById("edu").value);
+	alert(document.getElementById("job").value);
+	  
+</script>
+</html>
