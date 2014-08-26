@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form.html</title>
+</head>
+<body>
+
+	your Cities:
+	<br>
+	<ul>
+		<li id="bj" value="beijing"">beijing</li>
+		<li id="sh" value="shangh">shangh</li>
+		<li id="cq" value="congq">congq</li>
+	</ul>
+
+	your Games:
+	<br>
+	<ul>
+		<li id="fkj" value="fank">fank
+			<p>Jingy</p>
+		</li>
+		<li id="ms" value="mos">mos</li>
+		<li id="cq" value="chuanq">chuanq</li>
+	</ul>
+
+
+</body>
+
+<script type="text/javascript">
+	//click beijing, fank instead beijing switch them2
+	
+	//first beij
+  	window.onload=function(){//when document load done then execute onload
+		document.getElementById("bj").onclick=function(){
+		var bjElement=document.getElementById("bj");
+		//get fank
+		var fkElement=document.getElementById("fkj"); 
+		//switch (replaceChild(old,new) replace 2 child element)
+			//get parent element for replace
+			var oldElement = bjElement.parentNode.replaceChild(fkElement, bjElement);
+			alert(oldElement.firstChild.nodeValue);
+		}
+ 	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
