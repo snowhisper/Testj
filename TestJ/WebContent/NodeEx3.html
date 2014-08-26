@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form.html</title>
+</head>
+<body>
+	<select name="edu" id="edu">
+		<option value="master">master</option>
+		<option value="phd">phd</option>
+		<option value="u" selected="selected">u</option>
+		<option value="college">college</option>
+	</select>
+</body>
+
+<script type="text/javascript">
+//show all option value
+	var selectElement = document.getElementById("edu");
+	var optionElements = selectElement.getElementsByTagName("option");
+	for(var i=0;i<optionElements.length;i++){
+		var optionElement=optionElements[i];
+		alert(optionElement.firstChild.nodeValue);
+	}
+
+	
+	
+</script>
+</html>

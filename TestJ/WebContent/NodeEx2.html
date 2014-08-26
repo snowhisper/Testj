@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form.html</title>
+</head>
+<body>
+	<ul>
+		<li id="bj" value="beijing">
+			beijing
+			<p>haid</p>
+			aoyun
+		</li>
+		<li id="sh" value="shangh">shanghai</li>
+	</ul>
+</body>
+
+<script type="text/javascript">
+//show all childnode under beijing's all nodename,nodetype,nodevalue
+
+	var bjElement=document.getElementById("bj");
+	var bjText=bjElement.firstChild;
+	//alert(bjText.nodeName+" "+bjText.nodeType+" "+bjText.nodeValue);
+	var pElement =bjElement.childNodes[1];
+	//alert(pElement.nodeName+" "+pElement.nodeType+" "+pElement.nodeValue);
+ 	var ayText=bjElement.lastChild;
+	//alert(ayText.nodeName+" "+ayText.nodeType+" "+ayText.nodeValue);
+	
+</script>
+</html>
