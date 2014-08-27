@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form.html</title>
+</head>
+<body>
+
+	your Cities:
+	<br>
+	<ul id="city">
+		<li id="bj" value="beijing">beijing</li>
+		<li id="sh" value="shangh">shangh</li>
+		<li id="cq" value="congq">congq</li>
+	</ul>
+
+	your Games:
+	<br>
+	<ul>
+		<li id="fkj" value="fank">fank
+			<p>Jingy</p>
+		</li>
+		<li id="ms" value="mos">mos</li>
+		<li id="cq" value="chuanq">chuanq</li>
+		<li id="xj" value="xingj">xingji</li>
+	</ul>
+
+
+</body>
+
+<script type="text/javascript">
+	//insert new node tianjin into shanghai
+	//if shang hai is last insert before else insert after
+	//create tianjin
+	var liElement=document.createElement("li");
+	liElement.setAttribute("id", "tj");
+	liElement.setAttribute("name", "tianjin");
+	var textElement=document.createTextNode("tianjin")；
+	liElement.appendChild(textElement);
+
+	//get shanghai Node
+	var shElement=document.getElementById("shangh");
+	
+	//get shanghai parent node
+	var pElement = shElement.parentNode;
+	//through parent node's last node
+	//compare last node is shanghai node
+		pElement.appendChild(liElement);
+		pElement.insertBefore(liElement,shElement);
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
